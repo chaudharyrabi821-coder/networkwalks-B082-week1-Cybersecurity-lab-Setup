@@ -13,14 +13,23 @@ A private NAT Network is configured to allow additional virtual machines to be c
 The main objectives of Week 1 were to:
 
 Install and configure Oracle VirtualBox.
+
 Install and configure Kali Linux as a virtual machine.
+
 Create a private NAT Network for the lab environment.
+
 Configure network connectivity within Kali Linux.
+
 Verify the assigned IP address and network configuration.
+
 Test gateway and Internet connectivity.
+
 Verify DNS resolution.
+
 Create a clean VM snapshot for recovery.
+
 Document the complete laboratory setup.
+
 Prepare the environment for future cybersecurity projects.
 
 🛡️ Lab Purpose
@@ -30,31 +39,52 @@ The laboratory is designed as a controlled learning environment for practicing c
 Future exercises may include:
 
 🔎 Network reconnaissance
+
 🌐 Network and port scanning
+
 🛡️ Vulnerability assessment
+
 📡 Packet analysis
+
 🌍 Web security testing
+
 🧪 Security-tool experimentation
+
 💻 Practice with intentionally vulnerable systems
 
 ⚠️ Ethical & Legal Notice:
 All security testing performed in this laboratory must be limited to systems that are owned by the learner or for which explicit authorization has been provided. Cybersecurity tools and techniques should never be used against unauthorized systems.
 
 Lab Architecture
+
 <img width="1919" height="997" alt="image" src="https://github.com/user-attachments/assets/0fad236f-78b8-42ff-a51b-a513ab28168f" />
+
 Additional target machines can be added to the same virtual network in future projects.
+
 🖥️ Lab Environment
+
 Component	Configuration
+
 Host Operating System	Windows 11
+
 Processor	Intel Core i3 / i5
+
 RAM	16 GB
+
 Storage	512 GB SSD
+
 Virtualization Platform	Oracle VirtualBox
+
 Guest Operating System	Kali Linux 2026.2
+
 Network Type	NAT Network
+
 Network CIDR	10.0.0.0/24
+
 Kali Linux IP	10.0.0.2/24
+
 Gateway	10.0.0.1
+
 DNS Server	8.8.8.8
 
 🌐 Network Configuration
@@ -77,16 +107,20 @@ This configuration provides a controlled virtual networking environment while al
 The following tools and resources were used to build the virtual cybersecurity laboratory:
 
 Tool / Resource	Purpose
+
 7-Zip	Extracting and managing compressed files
 Oracle VirtualBox	Creating and managing virtual machines
 Kali Linux	Cybersecurity learning and testing environment
 NAT Network	Providing isolated virtual network connectivity
 Linux Networking Tools	Configuring and troubleshooting network connectivity
 VirtualBox Snapshots	Creating recovery points for the VM
+
 🔗 Official Resources
+
 7-Zip: 7-Zip Downloads
 Oracle VirtualBox: VirtualBox Downloads
 Kali Linux: Kali Linux Downloads
+
 🛡️ Lab Setup Workflow
 
 The Week 1 laboratory setup was completed through six main stages:
@@ -133,6 +167,7 @@ Clean VM Snapshot
 
 🛡️ Phase 01 — Lab Setup
 
+
 1️⃣ 7-Zip Installation
 What I Did
 
@@ -145,12 +180,17 @@ Kali Linux virtual machine files are commonly distributed in compressed formats.
 Result
 
 ✅ 7-Zip was successfully installed and verified.
+
 ✅ Required virtual machine files were extracted successfully.
+
 ✅ The Kali Linux VM files were prepared for the next stage of the laboratory setup.
+
 <img width="1256" height="639" alt="image" src="https://github.com/user-attachments/assets/6881d55e-07f2-49b0-8e8b-2c0d85ff9977" />
+
 <img width="889" height="407" alt="image" src="https://github.com/user-attachments/assets/7c907969-74e0-49a0-ad8b-46092992776c" />
 
 2️⃣ Oracle VirtualBox Installation
+
 What I Did
 
 Installed and configured Oracle VirtualBox as the virtualization platform for the cybersecurity laboratory.
@@ -166,10 +206,12 @@ Result
 ✅ Virtualization support was verified and the platform was ready for VM creation.
 
 ✅ The environment was prepared for importing the Kali Linux virtual machine.
+
 <img width="1287" height="649" alt="image" src="https://github.com/user-attachments/assets/8a887c29-3a74-4f2e-9ac7-c54f834b0c41" />
 <img width="1268" height="673" alt="image" src="https://github.com/user-attachments/assets/28862135-d52d-491e-878a-a101d11701f4" />
 
 3️⃣ NAT Network Configuration
+
 What I Did
 
 Created and configured a dedicated NAT Network in Oracle VirtualBox for the cybersecurity laboratory.
@@ -188,6 +230,7 @@ Gateway      : 10.0.0.1
 <img width="1915" height="1000" alt="image" src="https://github.com/user-attachments/assets/f0eba435-149b-4b65-b7fc-19f6b13eb912" />
 
 4️⃣ Kali Linux VM Setup
+
 What I Did
 
 Downloaded and imported the Kali Linux virtual machine into Oracle VirtualBox and connected the VM to the previously configured NatNetwork.
@@ -197,6 +240,7 @@ Why
 Kali Linux provides a comprehensive environment for cybersecurity education, network analysis, security-tool practice, and authorized security testing within a controlled laboratory environment.
 
 🖥️ VM Configuration
+
 Operating System : Kali Linux
 Version          : 2026.2
 Virtualization   : Oracle VirtualBox
@@ -206,10 +250,13 @@ Network          : NatNetwork
 <img width="643" height="403" alt="image" src="https://github.com/user-attachments/assets/cd82313e-de24-440c-b99b-53fddc09c814" />
 
 5️⃣ Kali Linux Network Configuration
+
 What I Did
+
 Configured the Kali Linux network interface with the required IP address, subnet, gateway, and DNS settings.
 
 Why
+
 Proper IP configuration is required for Kali Linux to communicate with the configured NAT Network and access network resources.
 
 IP Address : 10.0.0.2/24
@@ -226,10 +273,13 @@ ping google.com
 <img width="1294" height="820" alt="image" src="https://github.com/user-attachments/assets/7422811f-ccc5-48e0-ba1e-5d28fc6f413d" />
 
 6️⃣ VirtualBox Snapshot
+
 What I Did
+
 Created a VirtualBox snapshot after completing the initial Kali Linux lab configuration.
 
 Why
+
 The snapshot provides a safe restore point before continuing with future cybersecurity labs and experiments.
 
 Snapshot Purpose : Lab Backup & Recovery
@@ -242,6 +292,7 @@ Snapshot Purpose : Lab Backup & Recovery
 Documenting troubleshooting experiences demonstrates practical problem-solving skills and provides a reference for resolving similar issues in future laboratory setups.
 
 Problem 1 — Internet Connectivity After Static IP Configuration
+
 🔴 Issue
 
 After manually configuring the IPv4 settings, the Kali Linux VM experienced Internet connectivity issues. This can occur when NetworkManager connection properties are not configured correctly for the selected network setup.
@@ -267,6 +318,7 @@ nmcli connection show
 Then replace "Wired connection 1" with the connection name shown on your system.
 
 Problem 2 — VirtualBox VT-x / Hardware Virtualization Error
+
 🔴 Issue
 
 The Kali Linux VM initially failed to start because hardware virtualization was disabled in the system's BIOS/UEFI firmware.
@@ -276,12 +328,19 @@ The Kali Linux VM initially failed to start because hardware virtualization was 
 The issue was resolved by:
 
 Restarting the computer.
+
 Entering the BIOS/UEFI settings.
+
 Locating the hardware virtualization option.
+
 Enabling Intel VT-x / Intel Virtualization Technology.
+
 Saving the BIOS/UEFI configuration.
+
 Restarting the computer.
+
 Launching the Kali Linux VM again.
+
 ✅ Result
 
 Hardware virtualization was enabled successfully, and the Kali Linux VM started normally in VirtualBox.
@@ -311,9 +370,13 @@ I also gained an understanding of how network mode, IP addressing, gateways, and
 I gained practical experience configuring and verifying IPv4 network settings in Kali Linux, including:
 
 IPv4 address
+
 Subnet mask / CIDR
+
 Default gateway
+
 DNS server
+
 Network connectivity
 
 I also practiced using Linux networking commands to verify and troubleshoot the configuration.
@@ -331,6 +394,7 @@ During the setup, I encountered networking and virtualization-related issues.
 By troubleshooting these problems, I gained practical experience with:
 
 NetworkManager
+
 nmcli
 IPv4 configuration
 VirtualBox networking
@@ -351,17 +415,21 @@ This laboratory is intended for educational and authorized cybersecurity practic
 Security testing should only be performed on systems, networks, applications, or devices that you own or have explicit permission to test.
 
 👨‍🏫 Mentor
+
 Waqas Karim (CCIE)
 
 Thank you for the technical guidance and practical learning opportunity throughout the internship.
 
 👤 Author
+
 Rabi Chaudhary
+
 Cybersecurity Professional B082
 
 LinkedIn: https://lnkd.in/p/dS6wFAVN
 
 📌 Project Information
+
 Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup | Repository: GitHub
 
 
