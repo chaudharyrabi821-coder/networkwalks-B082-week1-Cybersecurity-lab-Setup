@@ -14,14 +14,23 @@ A private NAT Network is configured to allow additional virtual machines to be c
 The main objectives of Week 1 were to:
 
 Install and configure Oracle VirtualBox.
+
 Install and configure Kali Linux as a virtual machine.
+
 Create a private NAT Network for the lab environment.
+
 Configure network connectivity within Kali Linux.
+
 Verify the assigned IP address and network configuration.
+
 Test gateway and Internet connectivity.
+
 Verify DNS resolution.
+
 Create a clean VM snapshot for recovery.
+
 Document the complete laboratory setup.
+
 Prepare the environment for future cybersecurity projects.
 
 🛡️ Lab Purpose
@@ -47,11 +56,14 @@ Future exercises may include:
 ⚠️ Ethical & Legal Notice:
 All security testing performed in this laboratory must be limited to systems that are owned by the learner or for which explicit authorization has been provided. Cybersecurity tools and techniques should never be used against unauthorized systems.
 
+
 Lab Architecture
+
 
 <img width="1919" height="997" alt="image" src="https://github.com/user-attachments/assets/0fad236f-78b8-42ff-a51b-a513ab28168f" />
 
 Additional target machines can be added to the same virtual network in future projects.
+
 
 🖥️ Lab Environment
 
@@ -78,6 +90,7 @@ Kali Linux IP	10.0.0.2/24
 Gateway	10.0.0.1
 
 DNS Server	8.8.8.8
+
 
 🌐 Network Configuration
 
@@ -112,6 +125,7 @@ VirtualBox Snapshots	Creating recovery points for the VM
 7-Zip: 7-Zip Downloads
 Oracle VirtualBox: VirtualBox Downloads
 Kali Linux: Kali Linux Downloads
+
 
 🛡️ Lab Setup Workflow
 
