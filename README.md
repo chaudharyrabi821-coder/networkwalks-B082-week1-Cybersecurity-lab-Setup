@@ -14,23 +14,14 @@ A private NAT Network is configured to allow additional virtual machines to be c
 The main objectives of Week 1 were to:
 
 Install and configure Oracle VirtualBox.
-
 Install and configure Kali Linux as a virtual machine.
-
 Create a private NAT Network for the lab environment.
-
 Configure network connectivity within Kali Linux.
-
 Verify the assigned IP address and network configuration.
-
 Test gateway and Internet connectivity.
-
 Verify DNS resolution.
-
 Create a clean VM snapshot for recovery.
-
 Document the complete laboratory setup.
-
 Prepare the environment for future cybersecurity projects.
 
 🛡️ Lab Purpose
